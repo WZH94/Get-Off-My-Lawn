@@ -1,0 +1,384 @@
+/******************************************************************************/
+/*!
+\game	Get Off My Lawn!
+\file   ObjectList.h
+\author Wong Zhihao (50%)						| Ngm Hui Min, Lois (50%)
+\par    email: zhihao.wong\@digipen.edu | lois.ngm\@digipen.edu
+\par    DigiPen login: zhihao.wong		| lois.ngm
+\par    Course: GAM150
+\date	13/04/18
+\brief
+This file contains the enum of unit types, keeping track of soldiers, bases,
+etc.
+
+Copyright (C) 2018 DigiPen Institute of Technology.
+Reproduction or disclosure of this file or its contents without the
+prior written consent of DigiPen Institute of Technology is prohibited.
+All content © 2018 DigiPen (SINGAPORE) Corporation, all rights reserved.
+*/
+/******************************************************************************/
+#ifndef OBJECTLIST_H
+#define OBJECTLIST_H
+
+// Includes every game object type in the game
+
+// Soldier types
+#include "Normal.h"
+#include "AntiRusher.h"
+#include "Rusher.h"
+#include "Support.h"
+
+// Tower types
+#include "SingleTarget.h"
+#include "AreaOfEffect.h"
+#include "Poison.h"
+#include "SlowDown.h"
+#include "StunTower.h"
+
+// Particles
+#include "Particle.h"
+
+
+// Path
+#include "Path.h"
+
+// Projectiles
+#include "Projectiles.h"
+
+
+// Black Screen
+#include "BlackScreen.h"
+
+// G = Grandma, K = Kids
+// S = Soldiers, T = Towers
+// P = Projectiles, B = Buttons
+
+enum UNIT_TYPES
+{
+	// Granny soldiers
+	G_S_SHOOTER = 0,
+	G_S_TANK,
+	G_S_SPEED,
+	G_S_SABOTEUR,
+	G_S_SLOW,
+	G_S_ATTACKSPEEDUP,
+	G_S_STUN,
+	G_S_HEALER,
+	G_S_ATTACKBUFF,
+
+	// Kid soldiers 
+	K_S_SHOOTER,
+	K_S_TANK,
+	K_S_SPEED,
+	K_S_SABOTEUR,
+	K_S_SLOW,
+	K_S_ATTACKSPEEDUP,
+	K_S_STUN,
+	K_S_HEALER,
+	K_S_ATTACKBUFF,
+	K_S_BIGBOB,
+
+	// Granny buttons
+	G_BUTTON_1,
+	G_BUTTON_2,
+	G_BUTTON_3,
+	G_BUTTON_4,
+	G_BUTTON_5,
+	G_BUTTON_6,
+	G_BUTTON_7,
+	G_BUTTON_8,
+	G_BUTTON_9,
+
+	G_DESC,
+
+
+	// Main menu buttons
+	START_BUTTON,
+	OPTIONS_BUTTON,
+	CREDITS_BUTTON,
+	QUIT_BUTTON,
+
+
+	// level selection buttons
+	LEVEL_1_BUTTON,
+	LEVEL_2_BUTTON,
+	LEVEL_3_BUTTON,
+	LEVEL_4_BUTTON,
+	LEVEL_5_BUTTON,
+	LEVEL_6_BUTTON,
+	LEVEL_7_BUTTON,
+	LEVEL_8_BUTTON,
+	LEVEL_9_BUTTON,
+	LEVEL_10_BUTTON,
+
+
+	// Granny towers
+	G_T_SHOOTING,
+	G_T_SLOW,
+	G_T_SWING,
+	G_T_POISON,
+	G_T_STUN,
+
+	// Kids towers
+	K_T_SHOOTING,
+	K_T_SWING,
+	K_T_SLOW,
+	K_T_POISON,
+	K_T_STUN,
+
+	// Melee projectile
+	P_MELEE,
+	G_P_ATTACKSPEEDUP,
+	K_P_ATTACKSPEEDUP,
+	K_P_BIGBOB,
+
+// Paths
+PATH_STRAIGHT,
+PATH_TURN,
+WAVE_FLAG,
+WAVE_FLAG_BOSS,
+
+
+// volume buttons
+DECREASE_VOLUME_BUTTON,
+INCREASE_VOLUME_BUTTON,
+BGM_BUTTON,
+SFX_BUTTON,
+
+FULLSCREEN_BUTTON,
+
+
+
+// load player buttons
+NEW_GAME,
+PLAYER_1,
+PLAYER_2,
+PLAYER_3,
+
+
+
+GENERAL_GRANNY_UPGRADE_1,
+GENERAL_GRANNY_UPGRADE_2,
+GENERAL_GRANNY_UPGRADE_3,
+GENERAL_GRANNY_UPGRADE_4,
+GENERAL_GRANNY_UPGRADE_5,
+GENERAL_GRANNY_UPGRADE_6,
+GENERAL_GRANNY_UPGRADE_7,
+GENERAL_GRANNY_UPGRADE_8,
+GENERAL_GRANNY_UPGRADE_9,
+GENERAL_GRANNY_UPGRADE_10,
+
+
+
+DESC_HEALTH_INCREASE_1,
+DESC_HEALTH_INCREASE_2,
+DESC_RANGE_INCREASE_1,
+DESC_RANGE_INCREASE_2,
+DESC_ATTACKRATE_INCREASE_1,
+DESC_ATTACKRATE_INCREASE_2,
+DESC_SPEED_INCREASE,
+DESC_COOLDOWN_DECREASE,
+DESC_HEALING_INCREASE,
+DESC_DAMAGE_INCREASE,
+DESC_COST_DECREASE,
+DESC_MAX_CAP_INCREASE,
+
+TUTORIAL_SPEECH_0,
+TUTORIAL_SPEECH_1,
+TUTORIAL_SPEECH_2,
+
+
+		BUTTON_HEALTH_INCREASE,
+		BUTTON_RANGE_INCREASE,
+		BUTTON_NINJA_ATTACKRATE_INCREASE,
+		BUTTON_MAX_CAP,
+
+		BUTTON_COOKIE_ATTACKRATE_INCREASE,
+		BUTTON_SPEED_INCREASE,
+		BUTTON_COOLDOWN_DECREASE,
+		BUTTON_HEALING_INCREASE,
+		BUTTON_DAMAGE_INCREASE,
+		BUTTON_COST_DECREASE,
+		BUTTON_RANGE_INCREASE_2,
+	// Granny Tower Node Buttons
+		BUTTON_TOWER_SHOOTER,
+		BUTTON_TOWER_SWINGING,
+		BUTTON_TOWER_POISON,
+		BUTTON_TOWER_SLOW,
+		BUTTON_TOWER_STUN,
+		BUTTON_TOWER_CLOSE,
+
+
+
+		DESC_TOWER_SHOOTER,
+		DESC_TOWER_SWINGING,
+		DESC_TOWER_POISON,
+		DESC_TOWER_SLOW,
+		DESC_TOWER_STUN,
+
+		BUTTON_YES,
+		BUTTON_NO,
+		BUTTON_RESTART,
+		BUTTON_RESUME,
+		BUTTON_QUIT,
+		BUTTON_SHOP,
+		BUTTON_RESTART_2,
+		BUTTON_LEVEL_SELECT,
+		BUTTON_Y,
+		BUTTON_N,
+
+
+	// Grouped Textures Ends here
+
+
+
+		CONFIRMATION,
+
+		GAME_STAT,
+		BUTTON_NEXT_LEVEL,
+		GENERAL_STARS_LEFT,
+		BUTTON_PAUSE,
+	BUTTON_TIME_ADJUST,
+
+
+
+	// Projectiles
+	P_BLANK,
+
+	G_P_SHOOTER,
+	K_P_SHOOTER,
+	G_P_SABOTEUR,
+	K_P_SABOTEUR,
+	G_P_SLOW,
+	K_P_SLOW,
+
+
+	GT_P_SHOOTER,
+	KT_P_SHOOTER,
+	GT_P_AOE,
+	KT_P_AOE,
+	GT_P_STUN,
+	KT_P_STUN,
+	GT_P_POISON,
+	KT_P_POISON,
+	GT_P_SLOW,
+	KT_P_SLOW,
+
+	G_P_STUN,
+	K_P_STUN,
+	G_P_HEAL,
+	K_P_HEAL,
+
+
+
+	// Granny Mojo
+	GRANNY_MOJO,
+
+		// Granny Towers
+		G_TOWER_NODE1,
+		G_TOWER_NODE2,
+		G_TOWER_NODE3,
+		G_TOWER_NODE4,
+		GENERAL_RING,
+
+
+
+	// TUTORIAL LEVEL 0
+	TUTORIAL_SPEECH_01,
+	TUTORIAL_SPEECH_02,
+	TUTORIAL_SPEECH_03,
+	TUTORIAL_SPEECH_04,
+	TUTORIAL_SPEECH_05,
+	TUTORIAL_SPEECH_06,
+	TUTORIAL_SPEECH_07,
+	TUTORIAL_SPEECH_08,
+	TUTORIAL_SPEECH_09,
+	TUTORIAL_SPEECH_10,
+	TUTORIAL_SPEECH_11,
+	TUTORIAL_SPEECH_12,
+
+
+
+
+
+
+
+
+
+
+
+	// game cursor
+	CURSOR,
+
+	// base health
+	HEALTH,
+	ICON_KID,
+	ICON_GRANNY,
+	// delete player data
+	DELETE_BUTTON,
+
+	// options page
+	VOLUME_BAR,
+	FULLSCREEN,
+
+
+	LOCKED_LEVEL,
+	LOCKED_GRANNY,
+
+	K_TOWER_NODE,
+
+	BACK_BUTTON,
+	SHOP_BUTTON,
+
+
+
+	// Special Type for Tower Nodes
+	TOWER_NULL,
+
+	// Background
+	LEVEL1_BACKGROUND,
+	DIGIPEN_LOGO_BACKGROUND,
+	TEAM_LOGO_BACKGROUND,
+	MAIN_MENU_BACKGROUND,
+	CREDITS_BACKGROUND,
+	OPTIONS_BACKGROUND,
+	UPGRADE_BACKGROUND,
+	BLACK_SCREEN,
+
+	// Bases
+	G_BASE,
+	K_BASE,
+
+	UI_PANEL,
+
+	WAVE_BAR,
+	WAVE_FILLER,
+
+	GRANNY_BAR,
+	GRANNY_FILLER,
+
+	LEVEL_MULTIPLIER,
+
+
+	// Victory Star
+	VICTORY_STAR,
+
+	//Particle types
+	PARTICLE_BLANK,
+	PARTICLE_HIT_EFFECT,
+	PARTICLE_FIRE,
+	PARTICLE_EXPLOSION,
+	PARTICLE_POISON,
+	PARTICLE_SWEAT,
+	PARTICLE_SLEEPY_BUBBLE,
+	PARTICLE_GLOW,
+	PARTICLE_ATTACK_AURA,
+	PARTICLE_MONEY_DROPS,
+	PARTICLE_SMOKE,
+	PARTICLE_RUBBLE,
+	PARTICLE_POOF,
+
+	NOTHING,
+	LAST
+};
+#endif OBJECTLIST_H

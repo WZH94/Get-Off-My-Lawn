@@ -1,0 +1,47 @@
+Granny Towers:
+-Cookie
+Shoots sweet delicious cookies. Kids can't resist chocolate chip!
+Ranged Attack
+
+-Dentures
+Shoots teeth at everyone within its range. One of mankind's greatest fears. So wet... So slimy...
+Area Of Effect Attack
+
+-Broccoli
+Ugh... Broccoli... How is this food? Kids get sick from eating this.
+Ranged Attack
+Poisons Enemies
+
+-Cute Puppies
+Aww... So cute! Even in the midst of battle, kids can't help but slow down just to pet the little guy.
+Ranged Attack
+Slows Enemies
+
+-Cake
+No joke is any more classic than a cake to the face. Nobody ever sees it coming.
+Area Of Effect Attack
+Stuns enemies
+
+Kids Towers:
+-Slingshot
+The most advanced weaponry in kid technology. Nothing else TPs Granny's house faster.
+Ranged Attack
+
+-Pillows
+Kids have trained for years and honed their skills in the art of PILLOW FIGHT!
+Area Of Effect Attack
+
+-Whoopie Cushion
+Yuck! What's that horrible smell? Oh... It's a whoopie cushion. But why does it smell?
+Ranged Attack
+Poisons Enemies
+
+-Mud
+So sticky that it almost glues your feet to the ground.
+Ranged Attack
+Slows Enemies
+
+-Toy Cars
+Kids don't clean up after themselves. It's like a minefield to poor old Granny.
+Area Of Effect Attack
+Stuns Enemies

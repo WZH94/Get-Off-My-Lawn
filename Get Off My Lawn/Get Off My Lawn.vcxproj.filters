@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Levels">
+      <UniqueIdentifier>{d3872fcc-8095-4a7f-bbca-b08be3e25e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{5cbaca54-56ed-46c9-a6e6-f1daa3612bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{7e95c221-624d-480c-9ab5-7dc385c81714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\SoldierTypes">
+      <UniqueIdentifier>{677882ef-2cf3-4594-b57d-d562f0447a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\TowerTypes">
+      <UniqueIdentifier>{73649552-9a9e-4372-bb4f-567b177da48d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{08783fce-4245-420f-9a32-e6e5a9fc6635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI">
+      <UniqueIdentifier>{63ba116f-d542-49f3-9504-6f8aa551b24c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\SystemComponents">
+      <UniqueIdentifier>{f7eb9af4-7ece-4812-b4bb-7d7dbef85644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Logic Components">
+      <UniqueIdentifier>{e326d531-0661-4053-994a-fcec3b4cbfb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Levels\Level Data">
+      <UniqueIdentifier>{0183f7e3-416e-48eb-8e16-589e5c206854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Levels\Game Levels">
+      <UniqueIdentifier>{3de276fe-f1e9-4672-b64f-85549b25af0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Levels\Menus">
+      <UniqueIdentifier>{87bd8332-6ebb-4f62-9382-bed7786c3981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Logic Components\Pause States">
+      <UniqueIdentifier>{464a8b22-4515-4bf8-9686-cca70cf60ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ButtonTypes">
+      <UniqueIdentifier>{311c8ded-e968-4436-9492-30034a3d36e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawner.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Soldier.cpp">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Tower.cpp">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Logic\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectiles.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Combatant.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Rusher.cpp">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiRusher.cpp">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Support.cpp">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Normal.cpp">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Movement.cpp">
+      <Filter>Logic\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleTarget.cpp">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaOfEffect.cpp">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="CombatSystem.cpp">
+      <Filter>Logic\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="CursorPosition.cpp">
+      <Filter>System\SystemComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemComponents.cpp">
+      <Filter>System\SystemComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsManager.cpp">
+      <Filter>System\SystemComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_GameOver.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_LevelSelect.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_MainMenu.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelData.cpp">
+      <Filter>Levels\Level Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Level0.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicComponents.cpp">
+      <Filter>Logic\Logic Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Players.cpp">
+      <Filter>Levels\Level Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>Logic\Logic Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>System\SystemComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="TowerNode.cpp">
+      <Filter>Levels\Level Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Logic\Logic Components</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>System\SystemComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>Levels\Level Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectSpawner.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_LoadPlayer.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerData.cpp">
+      <Filter>Levels\Level Data</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_Shop.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="Level2.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level3.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level4.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level5.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level6.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level7.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level8.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level9.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Level10.cpp">
+      <Filter>Levels\Game Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameRateManager.cpp">
+      <Filter>System\SystemComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_Credits.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_Victory.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>System\SystemComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_Options.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseStateManager.cpp">
+      <Filter>Logic\Logic Components</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseState_Fade.cpp">
+      <Filter>Logic\Logic Components\Pause States</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackScreen.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseState_Menu.cpp">
+      <Filter>Logic\Logic Components\Pause States</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="DescriptionButton.cpp">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_DigipenLogo.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="SoldierButton.cpp">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="MojoButton.cpp">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="TowerNodeButton.cpp">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseState_Victory.cpp">
+      <Filter>Logic\Logic Components\Pause States</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseState_Defeat.cpp">
+      <Filter>Logic\Logic Components\Pause States</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState_TeamLogo.cpp">
+      <Filter>Levels\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="StunTower.cpp">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="SlowDown.cpp">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Poison.cpp">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameStateList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Soldier.h">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Tower.h">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Logic\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectiles.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Combatant.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Rusher.h">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiRusher.h">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Support.h">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Normal.h">
+      <Filter>Objects\SoldierTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Movement.h">
+      <Filter>Logic\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleTarget.h">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaOfEffect.h">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatSystem.h">
+      <Filter>Logic\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="CursorPosition.h">
+      <Filter>System\SystemComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemComponents.h">
+      <Filter>System\SystemComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsManager.h">
+      <Filter>System\SystemComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_MainMenu.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_GameOver.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_LevelSelect.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelData.h">
+      <Filter>Levels\Level Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Level0.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level1.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicComponents.h">
+      <Filter>Logic\Logic Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Players.h">
+      <Filter>Levels\Level Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>Logic\Logic Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>System\SystemComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="TowerNode.h">
+      <Filter>Levels\Level Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Logic\Logic Components</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>System\SystemComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>Levels\Level Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectSpawner.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_LoadPlayer.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerData.h">
+      <Filter>Levels\Level Data</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_Shop.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Level2.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level3.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level4.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level5.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level6.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level7.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level8.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level9.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Level10.h">
+      <Filter>Levels\Game Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameRateManager.h">
+      <Filter>System\SystemComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_Credits.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_Victory.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>System\SystemComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_Options.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseStateManager.h">
+      <Filter>Logic\Logic Components</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseState_Fade.h">
+      <Filter>Logic\Logic Components\Pause States</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackScreen.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseState_Menu.h">
+      <Filter>Logic\Logic Components\Pause States</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DescriptionButton.h">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_DigipenLogo.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="SoldierButton.h">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="MojoButton.h">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="TowerNodeButton.h">
+      <Filter>Objects\ButtonTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseState_Victory.h">
+      <Filter>Logic\Logic Components\Pause States</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseState_Defeat.h">
+      <Filter>Logic\Logic Components\Pause States</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState_TeamLogo.h">
+      <Filter>Levels\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Poison.h">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowDown.h">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="StunTower.h">
+      <Filter>Objects\TowerTypes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>
